@@ -1,4 +1,4 @@
-Process Modeling Vocabulary
+Enterprise Architecture Governance Modeling
 -------------
 
 ### Vocabulary Graph
