@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:gov="http://purl.org/gov/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:org="http://www.w3.org/ns/org#"
+    xmlns:pmm="http://purl.org/pmm#"
+    xmlns:resource="http://data.devdc.ons.org.br/resource/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xml:base="http://purl.org/gov/">
+  <owl:Ontology rdf:about="">
+    <rdfs:comment xml:lang="en-us">The gov metamodel is a model for governance in Enterprise Architecture</rdfs:comment>
+    <rdfs:label xml:lang="pt-br">Ontologia de Governança de Arquitetura Corporativa</rdfs:label>
+    <dcterms:title xml:lang="en-us">Enterprise Architecture Governance Ontology</dcterms:title>
+    <dc:title xml:lang="pt-br">Ontologia de Governança de Arquitetura Corporativa</dc:title>
+    <rdfs:label xml:lang="en-us">Enterprise Architecture Governance Ontology</rdfs:label>
+    <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <rdfs:comment xml:lang="pt-br">O metamodelo gov é um modelo de governança para Arquitetura Corporativa</rdfs:comment>
+    <dcterms:title xml:lang="pt-br">Ontologia de Governança de Arquitetura Corporativa</dcterms:title>
+    <dcterms:license rdf:resource="http://www.opendatacommons.org/licenses/pddl/1.0/"/>
+    <dc:creator>https://www.linkedin.com/in/agcunha/</dc:creator>
+    <dc:title xml:lang="en-us">Enterprise Architecture Governance Ontology</dc:title>
+    <owl:versionInfo>owl:Governance Vocabulary v0.1</owl:versionInfo>
+    <dc:description xml:lang="pt-br">O metamodelo gov é um modelo de governança para Arquitetura Corporativa</dc:description>
+    <dc:description xml:lang="en-us">The gov metamodel is a model for governance in Enterprise Architecture</dc:description>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://purl.org/gov/Contract">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en-us">Contract</rdfs:label>
+    <rdfs:label xml:lang="pt-br">Contrato</rdfs:label>
+    <dc:description xml:lang="pt-br">Um acordo entre o consumidor e provedor do serviço.</dc:description>
+    <dc:description xml:lang="en-us">An agreement between a service consumer and a service provider.</dc:description>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/gov/Goal">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en-us">Goal</rdfs:label>
+    <rdfs:label xml:lang="pt-br">Objetivo</rdfs:label>
+    <dc:description xml:lang="en-us">A high-level statement of intent or direction for an organization.</dc:description>
+    <dc:description xml:lang="pt-br">Uma declaração de alto nível que influencia ou direciona uma organização.</dc:description>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/gov/Service_Quality">
+    <rdfs:label xml:lang="pt-br">Qualidade de Serviço (SLA)</rdfs:label>
+    <rdfs:label xml:lang="en-us">Service Quality</rdfs:label>
+    <dc:description xml:lang="en-us">A preset configuration of non-functional attributes that may be assigned to a service or service contract.</dc:description>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <dc:description xml:lang="pt-br">Uma configuração predefinida de atributos não funcionais que podem ser atribuídos a um contrato de serviço ou ao serviço</dc:description>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/gov/Objective">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en-us">Objective</rdfs:label>
+    <rdfs:label xml:lang="pt-br">Meta</rdfs:label>
+    <dc:description xml:lang="en-us">A time-bounded milestone for an organization used to demonstrate progress towards a goal.</dc:description>
+    <dc:description xml:lang="pt-br">Um marco para a organização mostrar o progresso em direção a um objetivo.</dc:description>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.w3.org/ns/org#Organization">
+    <dc:description xml:lang="pt-br">Representa um grupo de pessoas organizadas em conjunto em uma comunidade ou outra estrutura social, comercial ou política. O grupo tem algum propósito comum ou motivo de existência que vai além do conjunto de pessoas que pertencem a ele e pode atuar como um Agente. As organizações são muitas vezes decomposíveis em estruturas hierárquicas. Recomenda-se que os rótulos lexicos da SKOS sejam usados ​​para rotular a Organização. Em particular, `skos: prefLabel` para o nome principal (possivelmente reconhecido legalmente),` skos: altLabel` para nomes alternativos (nomes comerciais, nomes coloquiais) e `skos: notação` para designar um código de uma lista de códigos.</dc:description>
+    <dc:description xml:lang="en-us">Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization. In particular `skos:prefLabel` for the primary (possibly legally recognized name), `skos:altLabel` for alternative names (trading names, colloquial names) and `skos:notation` to denote a code from a code list. Alternative names: _Collective_ _Body_ _Org_ _Group_</dc:description>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en-us">Organization</rdfs:label>
+    <rdfs:label xml:lang="pt-br">Organização</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/gov/Driver">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en-us">Driver</rdfs:label>
+    <rdfs:label xml:lang="pt-br">Direcionador</rdfs:label>
+    <dc:description xml:lang="en-us">An external or internal condition that motivates the organization to define its goals.</dc:description>
+    <dc:description xml:lang="pt-br">Um condição interna ou externa que motiva a organização a definir objetivos.</dc:description>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/pmm#Business_Service">
+    <dcterms:description xml:lang="pt-br">Suporta capacidades de negócio através de uma interface explicita definida e governada pela organização</dcterms:description>
+    <dcterms:description xml:lang="en-us">Supports business capabilities through an explicitly defined interface and is explicitly governed by an organization.</dcterms:description>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en-us">Business Service</rdfs:label>
+    <rdfs:label xml:lang="pt-br">Serviço de Negócio</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/gov/Measure">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="en-us">Measure</rdfs:label>
+    <rdfs:label xml:lang="pt-br">Métrica</rdfs:label>
+    <dc:description xml:lang="en-us">An indicator or factor that can be tracked, usually on an ongoing basis, to determine success or alignment with objectives and goals.</dc:description>
+    <dc:description xml:lang="pt-br">Um indicador ou fator que pode ser medido, normalmente em uma base de saída, que determina o sucesso ou alinhamento dos objetivos com as metas.</dc:description>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://purl.org/gov/is_realized_throught">
+    <rdfs:label xml:lang="pt-br">é realizado por</rdfs:label>
+    <rdfs:label xml:lang="en-us">is realized throught</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.org/gov/Objective"/>
+    <rdfs:domain rdf:resource="http://purl.org/gov/Goal"/>
+    <dc:description xml:lang="en-us">a Goal is realized thought an Objective</dc:description>
+    <dc:description xml:lang="pt-br">um Objetivo é realizado através de uma Meta</dc:description>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://purl.org/gov/realizes"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://purl.org/gov/motivates">
+    <rdfs:domain rdf:resource="http://purl.org/gov/Driver"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdfs:label xml:lang="pt-br">motiva</rdfs:label>
+    <rdfs:label xml:lang="en-us">motivates</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://purl.org/gov/is_motivated_by"/>
+    </owl:inverseOf>
+    <dc:description xml:lang="en-us">A Driver motivates an organization</dc:description>
+    <dc:description xml:lang="pt-br">Um directionador motiva uma organização</dc:description>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://purl.org/gov/applies_to">
+    <rdfs:label xml:lang="pt-br">aplica-se a</rdfs:label>
+    <dc:description xml:lang="en-us">A Service Quality applies to a Contract or Business Service</dc:description>
+    <rdfs:label xml:lang="en-us">applies to</rdfs:label>
+    <dcterms:description>A business service or a contract meets a service quality</dcterms:description>
+    <dc:description xml:lang="pt-br">Um SLA aplica-se a um Contrato ou Serviço de Negócio</dc:description>
+    <rdfs:domain rdf:resource="http://purl.org/gov/Service_Quality"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://purl.org/gov/meets"/>
+    </owl:inverseOf>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://purl.org/gov/Contract"/>
+          <owl:Class rdf:about="http://purl.org/pmm#Business_Service"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://purl.org/gov/meets">
+    <rdfs:domain rdf:resource="http://purl.org/gov/Contract"/>
+    <rdfs:label xml:lang="pt-br">satisfaz</rdfs:label>
+    <owl:inverseOf rdf:resource="http://purl.org/gov/applies_to"/>
+    <rdfs:range rdf:resource="http://purl.org/gov/Service_Quality"/>
+    <rdfs:domain rdf:resource="http://purl.org/pmm#Business_Service"/>
+    <rdfs:label xml:lang="en-us">meets</rdfs:label>
+    <dc:description xml:lang="en-us">A business service or a contract meets a service quality</dc:description>
+    <dc:description xml:lang="pt-br">Um serviço de negócio ou um contrato satisfaz um SLA</dc:description>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://purl.org/gov/is_motivated_by">
+    <dc:title xml:lang="en-us">is motivated by</dc:title>
+    <dc:title xml:lang="pt-br">é motivada por</dc:title>
+    <rdfs:range rdf:resource="http://purl.org/gov/Driver"/>
+    <rdfs:label xml:lang="pt-br">é motivada por</rdfs:label>
+    <dc:description xml:lang="en-us">An organization is motivated by a Driver</dc:description>
+    <owl:inverseOf rdf:resource="http://purl.org/gov/motivates"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <dc:description xml:lang="pt-br">Uma organização é motivada por um Direcionador</dc:description>
+    <rdfs:label xml:lang="en-us">is motivated by</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://purl.org/gov/realizes">
+    <rdfs:range rdf:resource="http://purl.org/gov/Goal"/>
+    <rdfs:domain rdf:resource="http://purl.org/gov/Objective"/>
+    <dc:description xml:lang="en-us">an Objective realizes a Goal</dc:description>
+    <rdfs:label xml:lang="en-us">realizes</rdfs:label>
+    <rdfs:label xml:lang="pt-br">realiza</rdfs:label>
+    <dc:description xml:lang="pt-br">uma Meta realiza um Objetivo</dc:description>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://purl.org/gov/is_tracked_against">
+    <rdfs:range rdf:resource="http://purl.org/gov/Measure"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://purl.org/gov/Objective"/>
+          <owl:Class rdf:about="http://purl.org/pmm#Business_Service"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:label xml:lang="pt-br">é medida por</rdfs:label>
+    <rdfs:label xml:lang="en-us">is tracked against</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://purl.org/gov/sets_performance_criteria_for"/>
+    </owl:inverseOf>
+    <dc:description xml:lang="en-us">an Objective is tracked against a Measure</dc:description>
+    <dc:description xml:lang="pt-br">uma Meta é medida por uma Métrica</dc:description>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://purl.org/gov/creates">
+    <rdfs:label xml:lang="pt-br">cria</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/gov/Driver"/>
+    <rdfs:label xml:lang="en-us">creates</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.org/gov/Goal"/>
+    <dc:description xml:lang="en-us">A driver creates a Goal</dc:description>
+    <dc:description xml:lang="pt-br">Um Direcionador cria um Objetivo</dc:description>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://purl.org/gov/governs_and_measure">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://purl.org/gov/is_governed_and_measured_by"/>
+    </owl:inverseOf>
+    <rdfs:range rdf:resource="http://purl.org/pmm#Business_Service"/>
+    <dc:description xml:lang="pt-br">um Serviço de Negócio é governado e medido por um Contrato</dc:description>
+    <rdfs:domain rdf:resource="http://purl.org/gov/Contract"/>
+    <dc:description xml:lang="en-us">a Business Service is governed and measured by a Contract</dc:description>
+    <rdfs:label xml:lang="en-us">governs and measures</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://purl.org/gov/sets_performance_criteria_for">
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://purl.org/pmm#Business_Service"/>
+          <owl:Class rdf:about="http://purl.org/gov/Objective"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:domain rdf:resource="http://purl.org/gov/Measure"/>
+    <rdfs:label xml:lang="pt-br">fornece critérios de desempenho para</rdfs:label>
+    <rdfs:label xml:lang="en-us">sets performance criteria for</rdfs:label>
+    <owl:inverseOf rdf:resource="http://purl.org/gov/is_tracked_against"/>
+    <dc:description xml:lang="pt-br">Uma métrica fornece critérios de desempenho para uma Meta ou Serviço de Negócio</dc:description>
+    <dc:description xml:lang="en-us">a Measure sets perfomance criteria for an Objetive or Business Service</dc:description>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://purl.org/gov/is_governed_and_measured_by">
+    <rdfs:label xml:lang="pt-br">é governado e medido por</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.org/pmm#Business_Service"/>
+    <rdfs:label xml:lang="en-us">is governed and measured by</rdfs:label>
+    <owl:inverseOf rdf:resource="http://purl.org/gov/governs_and_measure"/>
+    <rdfs:range rdf:resource="http://purl.org/gov/Contract"/>
+    <dc:description xml:lang="pt-br">um Serviço de Negócio é governado e medido por um Contrato</dc:description>
+    <dc:description xml:lang="en-us">a Business Service is governed and measured by a Contract</dc:description>
+  </owl:ObjectProperty>
+  <rdf:Description rdf:about="http://www.w3.org/ns/org#OrganizationalCollaboration">
+    <rdfs:comment xml:lang="pt-br">Uma colaboração entre duas ou mais Organizações, como um projeto. Atende aos critérios para ser uma Organização na medida em que tem uma identidade e propósito definidor independente de seus membros particulares, mas não é nem uma entidade legal formalmente reconhecida nem uma subunidade dentro de alguma organização maior. Pode ter tipicamente uma vida mais curta do que as organizações dentro dele, mas não necessariamente. Todos os membros são `org: Organização`s ao invés de indivíduos e essas organizações podem desempenhar papéis específicos dentro do empreendimento. Nomes alternativos: _Project_ _Venture_ _Endeavour_ _Consortium_ _Endeavour_</rdfs:comment>
+    <rdfs:label>Colaboração entre Organizações</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->
