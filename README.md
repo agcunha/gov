@@ -7,5 +7,5 @@ http://visualdataweb.de/webvowl/#iri=https://github.com/agcunha/gov/raw/master/g
 ### Vocabulary Documentation (Parrot)
 'http://idi.fundacionctic.org/parrot/parrot?documentUri=https%3A%2F%2Fgithub.com%2Fagcunha%2Fgov%2Fraw%2Fmaster%2Fgov.rdf&mimetype=default&profile=technical&language=en&customizeCssUrl='
 
-### Governance Vocabulary
-http://github.com/agcunha/gov
+### Process Modeling Vocabulary
+http://github.com/agcunha/pmv
