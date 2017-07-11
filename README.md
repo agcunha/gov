@@ -1,4 +1,4 @@
-Enterprise Architecture Governance Modeling
+Enterprise Architecture Governance Modeling Vocabulary
 -------------
 
 ### Vocabulary Graph
